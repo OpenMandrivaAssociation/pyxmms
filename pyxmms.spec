@@ -7,6 +7,7 @@ Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: http://people.via.ecp.fr/~flo/2002/PyXMMS/dist/%{name}-%{version}.tar.bz2
+Patch: pyxmms-2.07-fix-build.patch
 License: GPL
 Group: Development/Python
 URL: http://www.via.ecp.fr/~flo/	
@@ -25,6 +26,7 @@ useful higher-level functions.
 
 %prep
 %setup -q
+%patch -p1
 
 %build
 python setup.py build
