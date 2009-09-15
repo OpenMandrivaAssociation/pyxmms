@@ -1,6 +1,6 @@
 %define name pyxmms
 %define version 2.07
-%define release %mkrel 2
+%define release %mkrel 3
 
 Summary: Python bindings for XMMS
 Name: %{name}
