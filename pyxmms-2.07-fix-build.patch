@@ -1,0 +1,16 @@
+diff -p -up pyxmms-2.07/build-documentation.py~ pyxmms-2.07/build-documentation.py
+--- pyxmms-2.07/build-documentation.py~	2005-09-11 00:20:41.000000000 +0200
++++ pyxmms-2.07/build-documentation.py	2008-12-28 22:28:46.000000000 +0100
+@@ -99,12 +99,6 @@ def build_documentation(build_dir):
+         os.rename(os.path.join(".", doc_filename),
+                   os.path.join("..", "..", doc_dir, doc_filename))
+ 
+-    # Remove the .pyc files created by pydoc when importing the various
+-    # modules
+-    for module in modules + ["__init__"]:
+-        os.unlink(os.path.join("xmms", "%s.pyc" % module))
+-
+-
+ def main():
+     pyversion_str = "%u.%u" % ((sys.hexversion & 0xff000000L) >> 24,
+                                (sys.hexversion & 0x00ff0000L) >> 16)
