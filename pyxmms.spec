@@ -10,7 +10,7 @@ Source0: http://people.via.ecp.fr/~flo/2002/PyXMMS/dist/%{name}-%{version}.tar.b
 Patch: pyxmms-2.07-fix-build.patch
 License: GPL
 Group: Development/Python
-URL: http://www.via.ecp.fr/~flo/	
+URL: https://www.via.ecp.fr/~flo/	
 BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: libpython-devel
 BuildRequires: libxmms-devel
